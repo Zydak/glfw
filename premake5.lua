@@ -1,4 +1,5 @@
 project "glfw"
+    architecture "x86_64"
     kind "StaticLib"
     language "C"
     location "build"
