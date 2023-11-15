@@ -7,11 +7,7 @@ project "glfw"
     objdir "build/obj/%{cfg.buildcfg}"
     targetdir "build/bin/%{cfg.buildcfg}"
 	
-    includedirs 
-	{ 
-		VULKAN_SDK_PATH .. "/Include", 
-	}
-
+    includedirs { "%{wks.location}/Vulture/lib/vulkanLib/Include/", }
 
     files
     {
