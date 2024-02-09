@@ -3,6 +3,7 @@ project "glfw"
     kind "StaticLib"
     language "C"
     location "build"
+	staticruntime "on"
 
     objdir "build/obj/%{cfg.buildcfg}"
     targetdir "build/bin/%{cfg.buildcfg}"
@@ -31,6 +32,7 @@ project "glfw"
         defines
         {
             "_GLFW_X11",
+			"D_CRT_SECURE_NO_WARNINGS",
         }
         files
         {
@@ -53,7 +55,7 @@ project "glfw"
         defines 
 		{ 
 			"_GLFW_WIN32",
-			"_CRT_SECURE_NO_WARNINGS"
+			"D_CRT_SECURE_NO_WARNINGS",
 		}
 
         files
