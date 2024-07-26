@@ -28,6 +28,8 @@ project "glfw"
 		"src/window.c",
     }
 
+    buildoptions { "/MP" }
+
     filter "platforms:Linux"
         defines
         {
