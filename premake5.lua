@@ -80,9 +80,9 @@ project "glfw"
 
 	filter "configurations:Release"
 		runtime "Release"
-		optimize "speed"
+		optimize "Full"
 
     filter "configurations:Distribution"
 		defines "DISTRIBUTION"
 		runtime "Release"
-		optimize "on"
+		optimize "Full"
